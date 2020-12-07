@@ -84,9 +84,13 @@ function pb_exec_Callback(hObject, eventdata, handles)
 % hObject    handle to pb_exec (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-
-opt = simset('solver','ode45','srcWorkspace','Current');
-sim('CDPR_bloques_lazo_cerrado_3D_R2020a', [get(handles.edit2, 'String') get(handles.edit3, 'String')], opt);
+opt = simset('solver','ode15','srcWorkspace','Current');
+tinicial = str2double(get(handles.edit2,'string'));
+tfinal = str2double(get(handles.edit3,'string'));
+axis off;
+out = sim('CDPR_bloques_lazo_cerrado_3D_R2020a', [tinicial tfinal], opt);
+assignin('base','out',out);
+axis off;
 
 function edit2_Callback(hObject, eventdata, handles)
 % hObject    handle to edit2 (see GCBO)
