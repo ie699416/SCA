@@ -22,7 +22,7 @@ function varargout = gui(varargin)
 
 % Edit the above text to modify the response to help gui
 
-% Last Modified by GUIDE v2.5 06-Dec-2020 20:24:42
+% Last Modified by GUIDE v2.5 06-Dec-2020 20:44:33
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -95,6 +95,9 @@ function pb_sm_Callback(hObject, eventdata, handles)
 % hObject    handle to pb_sm (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+set(motores_cd,'visible','on');
+%set(gui,'visible','on');
+
 
 
 % --- Executes on button press in pb_cont_mot.
@@ -126,3 +129,52 @@ function figure1_CloseRequestFcn(hObject, eventdata, handles)
 
 % Hint: delete(hObject) closes the figure
 delete(hObject);
+
+
+% --- Executes during object creation, after setting all properties.
+function pb_ef_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to pb_ef (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+
+% --- Executes during object creation, after setting all properties.
+function pb_sm_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to pb_sm (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+
+% --- Executes during object creation, after setting all properties.
+function pb_cont_mot_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to pb_cont_mot (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+
+% --- Executes during object creation, after setting all properties.
+function pb_cont_ef_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to pb_cont_ef (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+
+% --- Executes during object creation, after setting all properties.
+function pb_conf_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to pb_conf (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+
+% --- Executes during object creation, after setting all properties.
+
+% hObject    handle to uibuttongroup2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+
+% --- Executes during object creation, after setting all properties.
+function uibuttongroup2_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to uibuttongroup2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called

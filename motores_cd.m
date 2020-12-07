@@ -22,7 +22,7 @@ function varargout = motores_cd(varargin)
 
 % Edit the above text to modify the response to help motores_cd
 
-% Last Modified by GUIDE v2.5 06-Dec-2020 18:30:22
+% Last Modified by GUIDE v2.5 06-Dec-2020 20:45:32
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -57,6 +57,7 @@ handles.output = hObject;
 
 % Update handles structure
 guidata(hObject, handles);
+movegui(hObject, 'center');
 set(handles.rb_mcd1, 'Value', 1); 
 set(handles.rb_mcd2, 'Value', 0); 
 set(handles.rb_mcd3, 'Value', 0); 
@@ -225,3 +226,17 @@ function plot_motor_graph(hObject, eventdata, handles)
         end
         title('Voltaje de entrada de motor de CD'); ylabel('Volts (V)'); xlabel('tiempo (segundos)');
     end
+
+
+% --- Executes during object creation, after setting all properties.
+function uipanel1_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to uipanel1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+
+% --- Executes during object creation, after setting all properties.
+function uibuttongroup1_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to uibuttongroup1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
