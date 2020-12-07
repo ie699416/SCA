@@ -112,7 +112,7 @@ function pb_conf_Callback(hObject, eventdata, handles)
 % hObject    handle to pb_conf (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-
+config;
 
 % --- Executes on button press in pb_cont_ef.
 function pb_cont_ef_Callback(hObject, eventdata, handles)
