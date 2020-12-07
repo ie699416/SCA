@@ -57,7 +57,6 @@ handles.output = hObject;
 
 % Update handles structure
 guidata(hObject, handles);
-movegui(hObject, 'center');
 set(handles.rb_mcd1, 'Value', 1); 
 set(handles.rb_mcd2, 'Value', 0); 
 set(handles.rb_mcd3, 'Value', 0); 
