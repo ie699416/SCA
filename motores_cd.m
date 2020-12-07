@@ -64,7 +64,18 @@ set(handles.rb_mcd4, 'Value', 0);
 plot_motor_graph(hObject, eventdata, handles);
 % UIWAIT makes motores_cd wait for user response (see UIRESUME)
 % uiwait(handles.figure1);
+set(handles.figure1,'Color', [1 1 1]);
+set(handles.uibuttongroup1,'BackgroundColor',[1 1 1]);
+set(handles.uipanel1,'BackgroundColor',[1 1 1]);
 
+set(handles.rb_mcd1,'BackgroundColor',[1 1 1]);
+set(handles.rb_mcd2,'BackgroundColor',[1 1 1]);
+set(handles.rb_mcd3,'BackgroundColor',[1 1 1]);
+set(handles.rb_mcd4,'BackgroundColor',[1 1 1]);
+
+set(handles.rb_out_enc,'BackgroundColor',[1 1 1]);
+set(handles.rb_out_vin,'BackgroundColor',[1 1 1]);
+set(handles.rb_out_par,'BackgroundColor',[1 1 1]);
 
 % --- Outputs from this function are returned to the command line.
 function varargout = motores_cd_OutputFcn(hObject, eventdata, handles) 
