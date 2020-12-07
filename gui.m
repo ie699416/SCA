@@ -88,14 +88,14 @@ function pb_ef_Callback(hObject, eventdata, handles)
 % hObject    handle to pb_ef (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-set(planta_end_effector,'visible','on');
+planta_end_effector;
 
 % --- Executes on button press in pb_sm.
 function pb_sm_Callback(hObject, eventdata, handles)
 % hObject    handle to pb_sm (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-set(motores_cd,'visible','on');
+motores_cd;
 %set(gui,'visible','on');
 
 

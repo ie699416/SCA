@@ -110,3 +110,36 @@ function axes_3d_CreateFcn(hObject, eventdata, handles)
 % Hint: place code in OpeningFcn to populate axes_3d
 
 %comet3(out.p.signals(1).values(:,1),out.p.signals(1).values(:,2),out.p.signals(1).values(:,3));
+
+% --- Executes during object creation, after setting all properties.
+function axes_2d_x_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to axes_2d_x (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: place code in OpeningFcn to populate axes_2d_x
+
+
+% --- Executes during object creation, after setting all properties.
+function axes_2d_y_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to axes_2d_y (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: place code in OpeningFcn to populate axes_2d_y
+
+
+% --- Executes during object creation, after setting all properties.
+function axes_2d_z_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to axes_2d_z (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: place code in OpeningFcn to populate axes_2d_z
+
+% --- Executes during object deletion, before destroying properties.
+function figure1_DeleteFcn(hObject, eventdata, handles)
+    % hObject    handle to figure1 (see GCBO)
+    % eventdata  reserved - to be defined in a future version of MATLAB
+    % handles    structure with handles and user data (see GUIDATA)
+    
